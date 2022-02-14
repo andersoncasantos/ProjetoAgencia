@@ -1,0 +1,357 @@
+/*
+* 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap');
+
+/*Layout*/
+html, body, #home{
+	height: 100%;
+}
+
+body {
+    background-color: #FFF;
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+h2::before {
+	content: '';
+	display: inline-block;
+	height: 23px;
+	width: 6px;
+	border-radius: 5px;
+	margin-right: 10px;
+	background-image: linear-gradient(#E60000, #8B0000);
+}
+
+h1, h3 {
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+h1 {
+	color: #FFF;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+}
+
+p {
+	color: #FFF;
+	font-size: 18px;
+}
+
+/*Barra de navegação*/
+nav.navbar-transparente {
+	padding: 15px;
+	background: rgba(0,0,0,0.6);
+	/*text-transform: uppercase;*/
+	/*font-size: 15px;*/
+	
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: #FFF;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #EE82EE;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,0.5);
+}
+.react:hover{
+	opacity: 0.7;
+}
+
+.line{
+	border-right: 2px solid #E60000;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: center;
+}
+
+.typing-animation {
+	animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+}
+
+@keyframes typing {
+	from{
+		width: 0;
+	}
+	to{
+		width: 16em;
+	}
+}
+
+@keyframes blinkCursor {
+	from{
+		border-right-color: #E60000;
+	}
+	to{
+		border-right-color: transparent;
+	}
+}
+
+
+
+@keyframes fa-blink {
+	0% { opacity: 1; }
+	50% { opacity: 0.5; }
+	100% { opacity: 0; }
+}
+.fa-blink {
+  -webkit-animation: fa-blink .75s linear infinite;
+  -moz-animation: fa-blink .75s linear infinite;
+  -ms-animation: fa-blink .75s linear infinite;
+  -o-animation: fa-blink .75s linear infinite;
+  animation: fa-blink .75s linear infinite;
+}
+
+/*parallax*/
+/*.banner {
+	position: relative;
+	background-image: url(../img/banner.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 300px;
+	padding-bottom: 300px;
+}
+*/
+
+/*Conteúdo*/
+.inicio{
+	border-bottom: 1px solid #e5e5e5;
+	background: url(../img/capa2.jpg);
+	background-attachment: fixed;
+}
+
+.capa {
+	text-align: center;
+}
+
+/*Botoes*/
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo {
+	background: #7c25f8;
+}
+
+.btn-roxo:hover {
+	background: #6207e3;
+	color: white;
+}
+
+.btn-branco {
+	border: 2px solid white;
+}
+
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	width: 5%;
+}
+
+.apresentacao {
+	padding: 160px 70px;
+	text-align: center;
+	color: #FFF;
+	border-bottom: 1px solid #e5e5e5;
+	position: relative;
+	background-image: url(../img/degrade.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.planos {
+	padding: 160px 70px;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #FDE6E6;
+	text-align: center;
+	position: relative;
+	background-image: url(../img/muro.jpg);
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.planos img:hover{
+	opacity: 0.7;
+}
+
+.texto-planos {
+	padding-bottom: 45px;
+}
+
+.caixa-planos {
+	padding-top: 20px;
+}
+
+.caixa {
+	padding: 160px 70px;
+	color: #FFF;
+	border-bottom: 1px solid #e5e5e5;
+	position: relative;
+	background-image: url(../img/degrade.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.servicos {
+	padding: 60px 0;
+	text-align: center;
+	
+}
+
+
+/*Formulário*/
+.formulario {
+	padding-bottom: 10px;
+	text-align: center;
+	color: #FFF;
+}
+
+.content {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 160px 70px;
+	color: #FFF;
+	position: relative;
+	background-image: url(../img/programer-code.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.field {
+	padding: 10px;
+	margin-bottom: 15px; 
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+textarea {
+	height: 130px;
+}
+/*Formulário*/
+
+/*Rodape*/
+footer {
+	background: #5A6268;
+	padding: 50px 0 20px 0px;
+	position: relative;
+}
+
+footer p {
+	margin-bottom: 0px;
+}
+
+footer h4{
+	color: #919496;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+	color: #FFF;
+	font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+	color: #9bf0e1;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+	float: right;
+	margin: 0 5px;
+}
+
+footer .container {
+	padding-bottom: 30px;
+}
+
+footer .copy {
+	padding-top: 15px;
+	color: white;
+	font-size: 15px;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+	.btn-custom{
+		margin: 10px 15px;
+		font-size: 1em;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+	h1{
+		font-size: 3em;
+	}
+
+	.btn-custom{
+		margin: 10px 15px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	h1{
+		font-size: 4em;
+	}
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+	h1{
+		font-size: 5em;
+	}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+	h1{
+		font-size: 6em;
+	}
+
+}
